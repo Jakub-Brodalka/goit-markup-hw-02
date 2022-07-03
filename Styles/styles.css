@@ -1,0 +1,188 @@
+:root {
+    --logo-color: #2196F3;
+    --bg-color: #2F303A;
+    --gray-color:#757575;
+    --blk-color: #212121;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--blk-color);
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--blk-color);
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo-down {
+    color: #fff;
+}
+
+.logoblu {
+    color: var(--logo-color);
+}
+
+.header-link a{
+    background-color: #fff;
+    color: var(--blk-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    text-shadow:none;
+}
+
+.header-link a:hover {
+    color: var(--logo-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-link-tel a{
+    color: var(--gray-color);
+}
+
+.section-button {
+    background-color: var(--bg-color);
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.3;
+    font-size: 44px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.blue-button {
+    background-color: var(--logo-color);
+    color: #fff;
+    border: none;
+    line-height: 1.875;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.content h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.33;
+    text-shadow: none;
+}
+
+.content p{
+    color: var(--gray-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-shadow: none;
+}
+
+.content h2,
+.team h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-shadow: none;
+    text-align: center;
+}
+
+.team {
+    background-color: #F5F4FA;
+    text-align: center;
+    text-shadow: none;
+}
+
+.team figure{
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.piccap h3{
+    color: var(--blk-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    text-shadow: none;
+}
+
+.piccap p{
+    color: var(--gray-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    text-shadow: none;
+}
+
+.footer{
+    background-color: #2F303A;
+}
+
+.contact{
+    color: #fff; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-shadow: none;
+}
+
+.contact a{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.contact a:hover {
+    color: var(--logo-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.port-button {
+    background-color: #F5F4FA;
+    color: var(--blk-color);
+    line-height: 1.625;
+    font-size: 16px;
+    border: none;
+    font-weight: 500;
+    border-radius: 4px;
+    }
+
+.port-button:hover {
+    background-color: var(--logo-color);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.portfolio {
+    background-color: #F5F4FA;
+    text-align: left;
+    text-shadow: none;
+}
+
+.portfolio li {
+    border: 1px solid #EEEEEE
+}
+
+.portcap h3 {
+    color: var(--blk-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.portcap p {
+    color: var(--gray-color); 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+}
