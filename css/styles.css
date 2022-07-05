@@ -4,15 +4,19 @@
     --gray-color:#757575;
     --blk-color: #212121;
 }
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto','Raleway', sans-serif;
     color: var(--blk-color);
-    font-weight: 400;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); im leaving this to be used if i spot where this shadow was*/
+
+li{
+    list-style: none;
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: var(--blk-color);
     font-size: 26px;
@@ -41,6 +45,7 @@ body {
     color: var(--logo-color);
     text-decoration: none;
     cursor: pointer;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-link-tel a{
@@ -55,6 +60,7 @@ body {
     font-size: 44px;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
 }
 
 .blue-button {
@@ -76,7 +82,6 @@ body {
 
 .content p{
     color: var(--gray-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     text-shadow: none;
@@ -113,7 +118,6 @@ body {
 
 .piccap p{
     color: var(--gray-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.17;
     text-shadow: none;
@@ -123,9 +127,12 @@ body {
     background-color: #2F303A;
 }
 
+.contact address {
+    font-style: normal;
+}
+
 .contact{
     color: #fff; 
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     text-shadow: none;
@@ -133,7 +140,6 @@ body {
 
 .contact a{
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
     text-decoration: none;
@@ -182,7 +188,7 @@ body {
 
 .portcap p {
     color: var(--gray-color); 
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
 }
+
