@@ -53,6 +53,11 @@ body {
 .header-link-contact a{
     color: var(--gray-color);
     font-size: 14px;
+    text-decoration: none;
+}
+
+.header-link-contact a:hover {
+    color: var(--logo-color);
 }
 
 .section-button {
