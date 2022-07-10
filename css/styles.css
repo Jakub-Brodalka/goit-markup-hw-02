@@ -5,8 +5,153 @@
     --blk-color: #212121;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 3px solid magenta; */
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-list-flex {
+    display: flex;
+    margin-left: 93px;
+}
+
+.h-list-link {
+    margin-right: 50px;
+}
+
+.header-flex {
+    display: flex ;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-flex ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.h-list-contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container-button{
+    margin-top: 100px;
+}
+
+.whatwedo-section{
+    margin-left: auto;
+    padding-bottom: 94px;
+}
+
+.whatwedo-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theteam-flex{
+    display: flex;
+    align-items: center;
+}
+
+.people {
+    margin-left:0px;
+    margin-right: 30px;
+}
+
+.people:last-child {
+    margin-right: 0px;
+}
+
+.people h3 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.people p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.footer-contact{
+    padding-top: 20px;
+}
+
+.buttons-flex {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.port-button {
+    padding: 6px 22px;
+    margin-right: 8px;
+}
+
+.pfolio-flex{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.portfolio-card {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.portfolio-card:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.pfolio-item {
+    margin: 0px
+}
+
+.portcap {
+    margin: 20px 24px ;
+}
+
+
+/* flexing (up) and styling (down) border line */
+
 body {
-    font-family: 'Roboto','Raleway', sans-serif;
+    font-family: 'Roboto', 'Raleway', sans-serif;
     color: var(--blk-color);
 }
 
@@ -36,6 +181,10 @@ body {
 .portfolio,
 .contact {
     list-style: none;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
 }
 
 .header-link a{
@@ -68,6 +217,7 @@ body {
     font-size: 44px;
     text-decoration: none;
     text-align: center;
+    height:600px
 }
 
 .blue-button {
@@ -93,12 +243,13 @@ body {
     line-height: 1.7;
 }
 
-.content h2,
+.wwd,
 .team h2{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .team {
@@ -127,6 +278,8 @@ body {
 
 .footer{
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contact address {
@@ -168,7 +321,6 @@ body {
 }
 
 .portfolio {
-    background-color: #F5F4FA;
     text-align: left;
 }
 
