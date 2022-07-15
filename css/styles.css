@@ -23,6 +23,11 @@ ul {
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: var(--blk-color);
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -76,31 +81,6 @@ ul {
     justify-content: space-between;
 }
 
-.theteam-flex{
-    display: flex;
-    align-items: center;
-}
-
-.people {
-    padding-left: 0px;
-    padding-right: 30px;
-    margin: 0
-}
-
-.people:last-child {
-    padding-right: 0px;
-}
-
-.people h3 {
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-
-.people p {
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
 .footer-contact{
     padding-top: 20px;
 }
@@ -123,26 +103,19 @@ ul {
     padding-top: 0px;
 }
 
-.portfolio-card:nth-child(3n) {
-    padding-right: 0px;
-}
-
 .pfolio-item {
     padding: 0px
-    margin: 0px;
+    margin: 0;
+/* 4 poniższe linijki zjechałem żywcem z inspectora żeby elementy flexowe trzymały się w określony sposób w containerze - wartości były inne musiałem je zerować coby wyświetlało się jak powinno */
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
+/* na 4 powyższe linie ustawienie margin:0 nie funka :( nie wiem skąd te marginesy się pojawiają i dlaczego muszę je wogle zerować to wina tego normalizera czy jeszcze coś innego?) */
 }
 
-.portcap {
+.port-cap {
     padding: 20px 24px ;
-}
-
-body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
-    color: var(--blk-color);
 }
 
 .logo {
@@ -158,7 +131,7 @@ body {
     color: #fff;
 }
 
-.logoblu {
+.logo-blue {
     color: var(--logo-color);
 }
 
@@ -166,7 +139,7 @@ body {
 .header-link-contact,
 .section-content,
 .h-list-contact,
-.whatwedo,
+.whatwedo-flex,
 .theteam-flex,
 .buttons-flex,
 .portfolio,
@@ -249,6 +222,11 @@ body {
     margin-bottom: 50px;
 }
 
+.theteam-flex {
+    display: flex;
+    align-items: center;
+}
+
 .team {
     background-color: #F5F4FA;
     text-align: center;
@@ -260,17 +238,31 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 
+.people {
+    display: flex;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    justify-content: space-around;
+}
+
 .piccap h3{
     color: var(--blk-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
+    margin-top: 30px;
+
 }
 
 .piccap p{
     color: var(--gray-color);
     font-size: 16px;
     line-height: 1.17;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .footer{
@@ -279,22 +271,27 @@ body {
     padding-bottom: 60px;
 }
 
-.contact address {
-    font-style: normal;
-}
+/* footer odstępy tekstu od siebie */
 
 .contact{
     color: #fff; 
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.contact address {
+    font-style: normal;
+    line-height: 24px;
 }
 
 .contact a{
     color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    line-height: 1.5;
+    line-height: 24px;
     text-decoration: none;
 }
+
+/* /footer odstępy tekstu od siebie */
 
 .contact a:hover {
     color: var(--logo-color);
@@ -330,14 +327,14 @@ body {
     border: 1px solid #EEEEEE
 }
 
-.portcap h3 {
+.port-cap h3 {
     color: var(--blk-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
 
-.portcap p {
+.port-cap p {
     color: var(--gray-color); 
     font-size: 16px;
     line-height: 1.875;
