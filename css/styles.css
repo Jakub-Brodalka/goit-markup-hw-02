@@ -104,14 +104,8 @@ body {
 }
 
 .pfolio-item {
-    padding: 0px
+    padding: 0px;
     margin: 0;
-/* 4 poniższe linijki zjechałem żywcem z inspectora żeby elementy flexowe trzymały się w określony sposób w containerze - wartości były inne musiałem je zerować coby wyświetlało się jak powinno */
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-/* na 4 powyższe linie ustawienie margin:0 nie funka :( nie wiem skąd te marginesy się pojawiają i dlaczego muszę je wogle zerować to wina tego normalizera czy jeszcze coś innego?) */
 }
 
 .port-cap {
@@ -225,6 +219,7 @@ body {
 .theteam-flex {
     display: flex;
     align-items: center;
+    justify-content: space-between; 
 }
 
 .team {
@@ -246,6 +241,10 @@ body {
     margin-inline-start: 0;
     margin-inline-end: 0;
     justify-content: space-around;
+}
+
+.piccap {
+    margin: 0;
 }
 
 .piccap h3{
@@ -271,8 +270,6 @@ body {
     padding-bottom: 60px;
 }
 
-/* footer odstępy tekstu od siebie */
-
 .contact{
     color: #fff; 
     font-size: 14px;
@@ -291,10 +288,12 @@ body {
     text-decoration: none;
 }
 
-/* /footer odstępy tekstu od siebie */
-
 .contact a:hover {
     color: var(--logo-color);
+}
+
+.list-footer-links {
+    margin-top: 9px;
 }
 
 .port-button {
