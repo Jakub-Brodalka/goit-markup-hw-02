@@ -68,7 +68,9 @@
             <h1 class="container h1">
               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
             </h1>
-            <button type="button" class="blue-button">Zamów usługę</button>
+            <button type="button" class="blue-button" data-modal-open>
+              Zamów usługę
+            </button>
           </div>
         </div>
       </section>
@@ -633,7 +635,12 @@
             <li class="footer-social-link">
               <a href="https://www.instagram.com" class="social-links-link">
                 <div class="footer-icon-bg">
-                  <svg class="footer-icon" width="20" height="20" viewbox="0 0 20 20">
+                  <svg
+                    class="footer-icon"
+                    width="20"
+                    height="20"
+                    viewbox="0 0 20 20"
+                  >
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </div>
@@ -642,7 +649,12 @@
             <li class="footer-social-link">
               <a href="https://www.twitter.com" class="social-links-link">
                 <div class="footer-icon-bg">
-                  <svg class="footer-icon" width="20" height="20" viewbox="0 0 20 20">
+                  <svg
+                    class="footer-icon"
+                    width="20"
+                    height="20"
+                    viewbox="0 0 20 20"
+                  >
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </div>
@@ -651,7 +663,12 @@
             <li class="footer-social-link">
               <a href="https://www.facebook.com" class="social-links-link">
                 <div class="footer-icon-bg">
-                  <svg class="footer-icon" width="20" height="20" viewbox="0 0 20 20">
+                  <svg
+                    class="footer-icon"
+                    width="20"
+                    height="20"
+                    viewbox="0 0 20 20"
+                  >
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </div>
@@ -660,7 +677,12 @@
             <li class="footer-social-link">
               <a href="https://www.linkedin.com" class="social-links-link">
                 <div class="footer-icon-bg">
-                  <svg class="footer-icon" width="20" height="20" viewbox="0 0 20 20">
+                  <svg
+                    class="footer-icon"
+                    width="20"
+                    height="20"
+                    viewbox="0 0 20 20"
+                  >
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </div>
@@ -670,5 +692,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
