@@ -114,13 +114,6 @@ body {
     display: flex;
 }
 
-.ppl-icon {
-    fill: #AFB1B8;
-    width: 20px;
-    height: 20px;
-    margin: 12px;
-}
-
 .icon {
     fill: #AFB1B8;
     width: 20px;
@@ -151,6 +144,13 @@ body {
     margin-bottom: 18px;
 }
 
+.ppl-icon {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+}
+
 .ppl-icon-bg{
     width: 44px;
     height: 44px;
@@ -158,9 +158,11 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.ppl-social-link a>div:hover,
-.ppl-social-link a>div>svg:hover {
+.ppl-social-link:hover .ppl-icon-bg{
     background-color: var(--logo-color);
+}
+
+.ppl-social-link:hover .ppl-icon {
     fill: #fff;
 }
 
@@ -213,7 +215,8 @@ body {
     padding-top: 0px;
 }
 
-.portfolio-card:hover {
+.portfolio-card:hover,
+.portfolio-card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
@@ -276,16 +279,24 @@ body {
     text-decoration: none;
 }
 
-.h-list-flex a:hover {
-    color: var(--logo-color);
+.contact-icon {
+    margin-right: 10px;
+}
+
+.smartphone {
+    padding: top 2px;
 }
 
 .h-list-link {
     margin-right: 50px;
 }
 
-.contact-icon {
-    margin-right: 10px;
+.h-list-link:hover {
+    color: var(--logo-color);
+}
+
+.h-list-link:hover .contact-icon{
+    fill: var(--logo-color);
 }
 
 .contact-link {
@@ -298,12 +309,6 @@ body {
     text-decoration: none;
 }
 
-.contact-link a:hover,
-.contact-link a>svg>use:hover {
-    color: var(--logo-color);
-    fill: var(--logo-color);
-}
-
 .section-button {
     color: #fff;
     font-weight: 900;
@@ -311,19 +316,13 @@ body {
     font-size: 44px;
     text-decoration: none;
     text-align: center;
-    height:600px
-}
-
-.bg {
     min-height: 600px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-    ),
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
     url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -455,7 +454,8 @@ body {
     margin-right: 8px;
     }
 
-.port-button:hover {
+.port-button:hover,
+.port-button:focus {
     background-color: var(--logo-color);
     color: #fff;
     text-decoration: none;
