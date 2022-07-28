@@ -289,6 +289,8 @@ body {
 
 .h-list-link {
     margin-right: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .h-list-link:hover {
@@ -307,8 +309,6 @@ body {
     color: var(--gray-color);
     font-size: 14px;
     text-decoration: none;
-    display:flex;
-    align-items: center;
 }
 
 .section-button {
@@ -504,13 +504,14 @@ body {
     height: 100%;
     left: 0px;
     top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgba(0, 0, 0, 0.2);
 }
 
 .modal {
     position: absolute;
-    top: 221px;
-    left: 536px;
     width: 528px;
     min-height: 581px;
     /* transition: background-color 500ms linear, transform 5000ms ease-in; */
@@ -532,4 +533,32 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.whereami::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: 29.5px;
+    background-color: var(--logo-color);
+}
+
+.wwd-list-item {
+    /* position: absolute; */
+}
+
+.wwd-desc {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #fff
 }
