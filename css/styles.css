@@ -269,6 +269,7 @@ body {
 .h-list-flex {
     display: flex;
     margin-left: 93px;
+    position:relative;
 }
 
 .h-list-flex a{
@@ -542,7 +543,7 @@ body {
     height: 4px;
     border-radius: 2px;
     position: absolute;
-    margin-top: 29.5px;
+    top: 45.5px;
     background-color: var(--logo-color);
 }
 
