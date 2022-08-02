@@ -98,6 +98,9 @@ body {
     padding-top: 16px;
     display: flex;
     justify-content: center;
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client a>div:hover,
@@ -149,6 +152,9 @@ body {
     width: 20px;
     height: 20px;
     margin: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ppl-icon-bg{
@@ -156,6 +162,9 @@ body {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ppl-social-link:hover .ppl-icon-bg{
@@ -180,6 +189,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
     padding-left: 0px;
+}
+
+.footer-icon-bg {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link a>div:hover,
@@ -282,6 +297,9 @@ body {
 
 .contact-icon {
     margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smartphone {
@@ -292,6 +310,9 @@ body {
     margin-right: 50px;
     display: flex;
     align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .h-list-link:hover {
@@ -435,6 +456,9 @@ body {
     color: rgba(255, 255, 255, 0.6);
     line-height: 24px;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact a:hover {
@@ -455,6 +479,9 @@ body {
     border-radius: 4px;
     padding: 6px 22px;
     margin-right: 8px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .port-button:hover,
