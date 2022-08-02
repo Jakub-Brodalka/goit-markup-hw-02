@@ -516,6 +516,19 @@ body {
     width: 528px;
     min-height: 581px;
     background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animodal 1500ms 500ms;
+}
+
+@keyframes animodal {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .close-button {
