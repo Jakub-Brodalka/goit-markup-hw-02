@@ -701,12 +701,47 @@
             </li>
           </ul>
         </div>
+        <div class="newsletter">
+          <form name="newsletter-signup">
+            <label>
+              <h3 class="social-header">zapisz się do newslettera</h3>
+              <input type="email" name="email"> 
+              <button type="submit" class="signup-btn" >
+              Zapisz się
+            </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>X</button>
+        <h2 class="form-header">Zostaw swoje dane w formularzu poniżej</h2>
+        <form name="modal-form">
+            <label>
+              <p class="modal-label">Imię</p>
+              <input type="email" name="email"> 
+            </label>
+            <label>
+              <p class="modal-label">Telefon</p>
+              <input type="tel" name="phone"> 
+            </label>
+            <label>
+              <p class="modal-label">Email</p>
+              <input type="email" name="email"> 
+            </label>
+            <label>
+              <p class="modal-label">Komentarz</p>
+              <input type="text" name="comment"> 
+            </label>
+            <label>
+              <p class="modal-label">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</p>
+              <input type="checkbox" name="tldr"> 
+            </label>
+            <button type="submit" class="signup-btn">Wyślij</button>
+          </form>
       </div>
     </div>
 
