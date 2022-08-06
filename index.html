@@ -705,15 +705,25 @@
           <form name="newsletter-signup">
             <label>
               <h3 class="social-header">zapisz się do newslettera</h3>
-              <input type="email" name="email"> 
+              <input type="email" name="email" placeholder="E-mail" required> 
               <button type="submit" class="signup-btn" >
               Zapisz się
+              <svg
+                  class="sub-icon"
+                  width="24"
+                  height="24"
+                  viewbox="0 0 24 24"
+                >
+                  <use href="./images/icons.svg#sendicon"></use>
+                </svg>
             </button>
             </label>
           </form>
         </div>
       </div>
     </footer>
+
+
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -722,23 +732,23 @@
         <form name="modal-form">
             <label>
               <p class="modal-label">Imię</p>
-              <input type="email" name="email"> 
+              <input class="modal-input" type="text" name="name" required> 
             </label>
             <label>
               <p class="modal-label">Telefon</p>
-              <input type="tel" name="phone"> 
+              <input class="modal-input" type="tel" name="phone" required> 
             </label>
             <label>
               <p class="modal-label">Email</p>
-              <input type="email" name="email"> 
+              <input class="modal-input" type="email" name="email" required> 
             </label>
             <label>
               <p class="modal-label">Komentarz</p>
-              <input type="text" name="comment"> 
+              <textarea class="comment-area" name="comment" placeholder="Wprowadź tekst"></textarea> 
             </label>
             <label>
               <p class="modal-label">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</p>
-              <input type="checkbox" name="tldr"> 
+              <input type="checkbox" name="tldr" required> 
             </label>
             <button type="submit" class="signup-btn">Wyślij</button>
           </form>
