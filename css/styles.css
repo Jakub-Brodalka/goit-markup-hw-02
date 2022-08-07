@@ -337,10 +337,6 @@ body {
     margin-right: 10px;
 }
 
-.smartphone {
-    padding: top 2px;
-}
-
 .h-list-nav {
     margin-right: 50px;
     display: flex;
@@ -622,14 +618,55 @@ body {
     width: 200px;
     height: 50px;
     background-color: var(--logo-color);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-    border-radius: 4px;
     color: #fff;
-    border-color: var(--logo-color);
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    line-height: 1.625;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .sub-icon {
-    fill: #fff    
+    fill: #fff;
+    margin-left: 24px;
+}
+
+.news-mail-inp {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    font-size: 16px;
+    line-height: 1.25;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.news-mail-inp:hover,
+.news-mail-inp:focus {
+    color: var(--logo-color);
+    border-color: var(--logo-color);
+    outline: none;
 }
 
 .backdrop {
@@ -684,18 +721,141 @@ body {
     transform: translate(-50%, -50%) scale(0.50);
 }
 
+.modal-form-section {
+    display: flex;
+    justify-content: center;
+}
+
 .modal-input{
     width: 448px;
     height: 38px;
+    padding-left: 40px;
+}
+
+.input-box:hover,
+.input-box:focus,
+.input-box>svg>use:hover,
+.input-box>svg>use:focus {
+    color: var(--logo-color);
+    border-color: var(--logo-color);
+    fill: var(--logo-color);
+    outline: none;
 }
 
 .comment-area {
     width: 448px;
     height: 120px;
     resize: none;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
 }
 
-/* .modal-form {
+.form-header {
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--blk-color);
+}
+
+.modal-label {
+    position:relative;
+}
+
+.modal-tldr {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
+}
+
+.modal-span {
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
-    color: #757575;
-} */
+    color: var(--gray-color)
+}
+
+.input-box {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.modal-icon {
+    position:absolute;
+    left:10px;
+    top:32px;
+    width: 18px;
+    height: 18px;
+    fill: var(--blk-color)
+}
+
+.modal-icon2 {
+    position: absolute;
+    right: 418px;
+    top: 72px;
+    width: 18px;
+    height: 18px;
+    fill: var(--blk-color)
+}
+
+.modal-icon3 {
+    position: absolute;
+    right: 417px;
+    top: 72px;
+    width: 18px;
+    height: 18px;
+    fill: var(--blk-color)
+}
+
+.check-box{
+    appearance: none;
+    margin-right: 7.75px;
+}
+
+
+.modal-tldr {
+    position: relative;
+}
+
+.modal-tldr::before {
+    position: absolute;
+    top: 4px;
+    left: -23px;
+    content:"";
+    display:block;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    border: 2px solid rgba(21, 21, 21, 0.9);
+}
+
+.check-box:checked + .modal-tldr::before {
+    background-color: var(--logo-color);
+    border: none;
+    background-image: url(./images/icons.svg#mail-checkmark) ;
+    
+}
+
+.submit-btn {
+    margin-top: 21px;
+}
+
+.modal-secondflex {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
