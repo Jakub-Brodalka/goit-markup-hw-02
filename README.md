@@ -1,3 +1,4 @@
-# goit-markup-hw-05
-go it praca domowa 5 
-https://github.com/Jakub-Brodalka/goit-markup-hw-05
+# goit-markup-hw-06
+
+go it praca domowa 6
+https://github.com/Jakub-Brodalka/goit-markup-hw-06
