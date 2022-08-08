@@ -117,6 +117,7 @@ body {
 
 .footer-divs{
     display: flex;
+    justify-content: space-between;
 }
 
 .icon {
