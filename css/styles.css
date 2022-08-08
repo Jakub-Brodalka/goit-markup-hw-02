@@ -821,7 +821,6 @@ body {
     margin-right: 7.75px;
 }
 
-
 .modal-tldr {
     position: relative;
 }
@@ -841,8 +840,7 @@ body {
 .check-box:checked + .modal-tldr::before {
     background-color: var(--logo-color);
     border: none;
-    background-image: url(./images/icons.svg#mail-checkmark) ;
-    
+    background-image: url(./images/icons.svg#mail-checkmark);
 }
 
 .submit-btn {
