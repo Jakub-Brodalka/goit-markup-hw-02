@@ -735,8 +735,8 @@ body {
 
 .input-box:hover,
 .input-box:focus,
-.input-box+svg:hover,
-.input-box+svg:focus {
+.input-box:hover+svg,
+.input-box:focus+svg {
     color: var(--logo-color);
     border-color: var(--logo-color);
     fill: var(--logo-color);
