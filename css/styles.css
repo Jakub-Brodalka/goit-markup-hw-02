@@ -607,7 +607,7 @@ body {
     background-color: rgba(47, 48, 58, 0.8);
     color: #fff;
     position:absolute;
-    bottom: 0;
+    bottom: 4px;
 }
 
 .newsletter {
