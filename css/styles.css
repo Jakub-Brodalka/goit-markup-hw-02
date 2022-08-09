@@ -798,24 +798,6 @@ body {
     fill: var(--blk-color)
 }
 
-.modal-icon2 {
-    position: absolute;
-    right: 418px;
-    top: 72px;
-    width: 18px;
-    height: 18px;
-    fill: var(--blk-color)
-}
-
-.modal-icon3 {
-    position: absolute;
-    right: 417px;
-    top: 72px;
-    width: 18px;
-    height: 18px;
-    fill: var(--blk-color)
-}
-
 .check-box{
     appearance: none;
     margin-right: 7.75px;
