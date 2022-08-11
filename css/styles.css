@@ -823,9 +823,7 @@ body {
     background-color: var(--logo-color);
     border: none;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18' height='21' viewBox='0 0 18 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.666656' width='17.7143' height='20' rx='2' fill='%232196F3'/%3E%3Cpath d='M7.19174 14.2633L4.38 11.033L4.30484 10.9467L4.22938 11.0328L3.24623 12.1543L3.18865 12.22L3.246 12.2859L7.11628 16.7323L7.19171 16.819L7.26713 16.7323L15.5754 7.18721L15.6326 7.12155L15.5754 7.0559L14.5992 5.93435L14.5238 5.84773L14.4484 5.93431L7.19174 14.2633Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
-    position: absolute;
-    top:4px;
-    left:-20px;
+    background-size: contain;
 }
 
 .submit-btn {
